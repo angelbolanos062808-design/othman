@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Othmane Soubki - Portfolio</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+  body {
+    margin: 0;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* HEADER */
+  header {
+    background-color: #000080; /* navy blue */
+    color: #ffffff;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid rgba(200, 60, 60, 0.8); /* faded red bottom outline */
+    margin: 0;
+  }
+
+  header h1 {
+    font-weight: 600;
+    margin: 0;
+  }
+
+  /* NAVIGATION BAR */
+  nav {
+    background: url("Project 1.jpg") no-repeat center center/cover;
+    height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px;
+  }
+
+  nav p {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 20px 0 0;
+  }
+
+  /* 🔴 Faded red buttons */
+  nav a {
+    background-color: rgba(200, 60, 60, 0.8);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(200, 60, 60, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+  nav a:hover {
+    background-color: rgba(200, 60, 60, 1);
+    transform: scale(1.05);
+  }
+
+  /* MAIN CONTENT */
+  main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 0 20px;
+  }
+
+  /* ABOUT ME SECTION */
+  .about-me {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    color: #000000;
+  }
+
+  .about-text {
+    flex: 1;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: rgba(200, 60, 60, 0.9); /* faded red title */
+  }
+
+  .about-text p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .about-image {
+    flex: 1;
+    max-width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    height: 300px;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .about-image img.active {
+    opacity: 1;
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 700px) {
+    .about-me {
+      flex-direction: column;
+    }
+
+    .about-image {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 14px;
+    background-color: #000080;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    border-top: 4px solid rgba(200, 60, 60, 0.8); /* faded red top outline */
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Othmane Soubki</h1>
+</header>
+
+<nav>
+  <p>Othman Soubki</p>
+  <a href="#">Home</a>
+  <a href="#">About Me</a>
+  <a href="#">Gallery</a>
+  <a href="#">Vlogs</a>
+  <a href="#">Contact</a>
+</nav>
+
+<main>
+  <section class="about-me">
+    <div class="about-text">
+      <h2>About Me</h2>
+      <p>Hello! I’m Othmane Soubki, a passionate creator who loves blending creativity with technology. I enjoy crafting engaging content, exploring new ideas, and sharing my journey through my gallery and vlogs. Welcome to my personal space on the web!</p>
+    </div>
+    <div class="about-image">
+      <!-- Updated Slideshow with 4 images -->
+      <img src="img1.jpeg" class="active" alt="Slide 1">
+      <img src="Img2.jpg" alt="Slide 2">
+      <img src="img3.jpg" alt="Slide 3">
+      <img src="img4.PNG" alt="Slide 4">
+    </div>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Othmane Soubki. All rights reserved.
+</footer>
+
+<script>
+  // Simple Slideshow
+  let slides = document.querySelectorAll(".about-image img");
+  let currentIndex = 0;
+
+  setInterval(() => {
+    slides[currentIndex].classList.remove("active");
+    currentIndex = (currentIndex + 1) % slides.length;
+    slides[currentIndex].classList.add("active");
+  }, 3000); // change every 3 seconds
+</script>
+
+</body>
+</html>
