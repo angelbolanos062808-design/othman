@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official portfolio of Othmane Soubki — model, creator, and visionary. Explore his latest shoots, vlogs, and collaborations.">
+  <title>Othmane Soubki - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ========================= -->
+  <!--     HEADER SECTION        -->
+  <!-- ========================= -->
+  <header>
+    <h1>Othmane Soubki</h1>
+  </header>
+
+  <!-- ========================= -->
+  <!--     HERO / NAV SECTION    -->
+  <!-- ========================= -->
+  <nav>
+    <!-- Navigation links -->
+    <a href="index.html">Home</a>
+    <a href="about me.html">About Me</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="vlogs">Vlogs</a>
+    <a href="contact.html">Contact</a>
+	  
+
+    <!-- Hero overlay -->
+    <div class="hero-text">
+      <h2>Othmane Soubki</h2>
+      <p>Model • Creator • Vision in Motion</p>
+    </div>
+  </nav>
+
+  <!-- ========================= -->
+  <!--         MAIN BODY         -->
+  <!-- ========================= -->
+  <main>
+
+   
+
+    <!-- ABOUT ME -->
+    <section class="about-me">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          Hello! I’m Othmane Soubki, a passionate creator who loves blending creativity with technology. 
+          I enjoy crafting engaging content, exploring new ideas, and sharing my journey through my gallery and vlogs. 
+          Welcome to my personal space on the web!
+        </p>
+
+        <!-- 🔴 "Learn More" Button -->
+        <a href="about me.html" class="cta-button">Learn More</a>
+      </div>
+
+      <div class="about-image">
+        <img src="img1.jpeg" class="active" alt="Model photo 1">
+        <img src="img2.jpg" alt="Model photo 2" loading="lazy">
+        <img src="img3.jpg" alt="Model photo 3" loading="lazy">
+        <img src="img4.png" alt="Model photo 4" loading="lazy">
+      </div>
+    </section>
+	  
+ <!-- ========================= -->
+    <!-- VIDEO + MODEL DETAILS SIDE BY SIDE -->
+    <!-- ========================= -->
+    <section class="video-model-section">
+      <div class="video-side">
+        <video autoplay muted loop playsinline>
+          <source src="othmane-runway.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="model-info-side">
+        <h2>Model Details</h2>
+        <ul>
+          <li><strong>Height:</strong> 6'0" (183 cm)</li>
+          <li><strong>Weight:</strong> 165 lbs (75 kg)</li>
+          <li><strong>Hair:</strong> Black</li>
+          <li><strong>Eyes:</strong> Brown</li>
+          <li><strong>Location:</strong> Los Angeles, CA</li>
+          <li><strong>Availability:</strong> Worldwide</li>
+        </ul>
+      </div>
+    </section>
+	  
+    <!-- PORTFOLIO GRID -->
+    <section class="portfolio">
+      <h2>Portfolio Highlights</h2>
+      <div class="portfolio-grid">
+        <img src="model1.jpg" alt="Editorial" loading="lazy">
+        <img src="model2.jpg" alt="Runway" loading="lazy">
+        <img src="model3.jpg" alt="Studio" loading="lazy">
+       
+      </div>
+
+      <!-- "View More" Button -->
+      <div class="portfolio-button">
+        <a href="gallery.html" class="cta-button">View More</a>
+      </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact-cta">
+      <h2>Interested in Booking?</h2>
+      <p>For collaborations, modeling opportunities, or inquiries, reach out below:</p>
+      <a href="contact.html" class="cta-button">Contact Me</a>
+    </section>
+  </main>
+
+  <!-- ========================= -->
+  <!--          FOOTER           -->
+  <!-- ========================= -->
+  <footer>
+    &copy; 2025 Othmane Soubki. All rights reserved.
+  </footer>
+
+  <!-- ========================= -->
+  <!--          SCRIPTS          -->
+  <!-- ========================= -->
+  <script>
+    // Simple fading slideshow
+    const slides = document.querySelectorAll(".about-image img");
+    let index = 0;
+
+    setInterval(() => {
+      slides[index].classList.remove("active");
+      index = (index + 1) % slides.length;
+      slides[index].classList.add("active");
+    }, 3000);
+  </script>
+</body>
+</html>
