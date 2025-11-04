@@ -1,11 +1,38 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Official portfolio of Othmane Soubki — model, creator, and visionary. Explore his latest shoots, vlogs, and collaborations.">
-  <title>Othmane Soubki - Portfolio</title>
+  <meta name="description" content="Othmane Soubki — professional model portfolio gallery: editorial, commercial, runway looks, and portraits." />
+  <title>Gallery — Othmane Soubki</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- Page-specific tweaks (kept for gallery layout only) -->
+  <style>
+    /* Section wrapper using your existing .portfolio block */
+    .portfolio { margin: 40px auto 80px; }
+
+    /* Make figures look polished */
+    .portfolio-grid figure {
+      margin: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,.15);
+      background: #fff;
+    }
+    .portfolio-grid figcaption {
+      padding: 10px 12px;
+      font-size: .95rem;
+      text-align: left;
+      color: #333;
+    }
+    .credit {
+      display: block;
+      font-size: .85rem;
+      opacity: .8;
+      margin-top: 4px;
+    }
+  </style>
 </head>
 
 <body>
@@ -17,23 +44,89 @@
   </header>
 
   <!-- ========================= -->
-  <!--     HERO / NAV SECTION    -->
+  <!--        NAVIGATION         -->
   <!-- ========================= -->
-  <nav>
-    <!-- Navigation links -->
-   <a href="index.html">Home</a>
+  <nav aria-label="Primary">
+    <a href="index.html">Home</a>
     <a href="about me.html">About Me</a>
     <a href="gallery.html">Gallery</a>
-    <a href="vlogs">Vlogs</a>
+    <a href="vlogs.html">Vlogs</a>
     <a href="contact.html">Contact</a>
-
-    <!-- Hero overlay -->
-    <div class="hero-text">
-      <h2>Othmane Soubki</h2>
-      <p>Model • Creator • Vision in Motion</p>
-    </div>
   </nav>
 
-<body>
+      <div class="portfolio-grid">
+        <!-- 1 -->
+        <figure>
+          <a href="img/gallery-1-large.jpg" data-caption="Clean beauty portrait — natural light. Photographer: Jane Doe.">
+            <img
+              src="img/gallery-1.jpg"
+              alt="Clean beauty portrait of Othmane with soft natural light and neutral background"
+              loading="lazy" />
+          </a>
+          <figcaption>
+            Clean Beauty — Natural Light
+            <span class="credit">Ph: Jane Doe • MUA: —</span>
+          </figcaption>
+        </figure>
+
+        <!-- 2 -->
+        <figure>
+          <a href="img/gallery-2-large.jpg" data-caption="Editorial black & white — strong jawline and angles. Photographer: Alex Kim.">
+            <img
+              src="img/gallery-2.jpg"
+              alt="Editorial black and white portrait highlighting jawline and cheekbones"
+              loading="lazy" />
+          </a>
+          <figcaption>
+            Editorial — B&W
+            <span class="credit">Ph: Alex Kim</span>
+          </figcaption>
+        </figure>
+
+        <!-- 5 -->
+        <figure>
+          <a href="img/gallery-5-large.jpg" data-caption="Outdoor portrait — golden hour. Photographer: Sam Rivera.">
+            <img
+              src="img/gallery-5.jpg"
+              alt="Golden hour outdoor portrait with warm light and shallow depth of field"
+              loading="lazy" />
+          </a>
+          <figcaption>
+            Portrait — Golden Hour
+            <span class="credit">Ph: Sam Rivera</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Optional quick details block on the gallery page -->
+    <section class="model-info-side" aria-label="Model Details" style="max-width:1000px;margin:0 auto 60px;">
+      <h2>Model Details</h2>
+      <ul>
+        <li><strong>Height:</strong> 6'0" (183 cm)</li>
+        <li><strong>Weight:</strong> 165 lbs (75 kg)</li>
+        <li><strong>Hair:</strong> Black</li>
+        <li><strong>Eyes:</strong> Brown</li>
+        <li><strong>Location:</strong> Los Angeles, CA</li>
+        <li><strong>Availability:</strong> Worldwide</li>
+      </ul>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="contact-cta">
+      <h2>Interested in Booking?</h2>
+      <p>For collaborations, modeling opportunities, or inquiries, reach out below:</p>
+      <a href="https://angelbolanos062808-design.github.io/othman/contact.html" class="cta-button">Contact Me</a>
+    </section>
+  </main>
+
+  <!-- ========================= -->
+  <!--          FOOTER           -->
+  <!-- ========================= -->
+  <footer>
+    &copy; 2025 Othmane Soubki. All rights reserved.
+  </footer>
+
+  <!-- No scripts needed here (removed unused slideshow) -->
 </body>
 </html>
